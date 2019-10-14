@@ -1,0 +1,70 @@
+{
+    "swagger": "2.0",
+    "info": {
+    "version": "1.0.0",
+    "description": "sample api login logout",
+    "title": "sample api"
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "schemes": [
+    "http"
+    ],
+    "paths": {
+    "/app/insert": {
+    "post": {
+    "description": "Creates a user in the database",
+    "parameters": [
+    {
+    "type": "string",
+    "description": "Email of user",
+    "name": "email",
+    "in": "formData",
+    "example": "nitesharyaaab@gmail.com"
+    },
+    {
+    "type": "string",
+    "description": "Phone of user",
+    "name": "phone",
+    "in": "formData",
+    "example": "776-392-5394"
+    },
+    {
+    "type": "string",
+    "description": "Birthday of user",
+    "name": "birthday",
+    "in": "formData",
+    "example": "yyyy-mm-dd"
+    }
+    ],
+    "responses": {
+    "200": {
+    "description" : "successfully signed up."
+    }
+    }
+    },
+    "get": {
+    "description": "Creates a user in the database",
+    
+    "responses": {
+    "200": {
+    "description" : "response template render"
+    }
+    }
+    }
+    },
+    "/app/select": {
+    "get": {
+    "description": "Logs in a user",
+    
+    "responses": {
+    "200": {
+    "description" : "successfully logged in."
+    }
+    }
+    }
+    
+    
+    }
+    }
+    }
