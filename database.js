@@ -29,7 +29,7 @@ abc.insert=(data)=>{
  return new Promise((resolve,reject)=>{
 
 
-con.query(`insert into task (id,user)values(50,"akash")`,(err,rows,fields)=>{
+con.query(`insert into user1 (id,user)values(50,"akash")`,(err,rows,fields)=>{
 if(!err){
  resolve(rows);
 }
@@ -41,5 +41,4 @@ else{
 
  })
 }
-
 module.exports=abc;
